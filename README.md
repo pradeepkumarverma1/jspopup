@@ -65,7 +65,7 @@ You can customize positive action and negative action buttons, in the following 
       text: "Okay, continue", // Defaults to "Continue"
       background: "blue", // You can also use HexCode and rgba()
       color: "white", // You can also use HexCode and rgba()
-    }
+    },
     
     //Negative button customization
     
@@ -73,9 +73,9 @@ You can customize positive action and negative action buttons, in the following 
       text: "Deny", // Defaults to "Cancel"
       background: "tomato", // You can also use HexCode and rgba()
       color: "white" // You can also use HexCode and rgba()
-    }
+    },
   
-  })
+  });
 
 </script>
 ```
