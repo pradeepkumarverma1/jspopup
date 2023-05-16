@@ -6,7 +6,7 @@ JsPopup is a simple popup written in vanilla Javascript. You can use it in any o
 The most easiest way to Use JsPopup is to use CDN link:
 
 ```
-<script src="https://cdn.jsdelivr.net/gh/pradeepkumarverma1/jspopup@1.0.1/popup.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/pradeepkumarverma1/jspopup@1.0.1/popup.min.js"></script>
 ```
 Always use the latest version. The lastest version is **1.0.1**
 
@@ -27,6 +27,10 @@ Once you have linked the CDN, you can simply use the jspopup.
 
 </script>
 ```
+### Result
+![message-only-popup-mockup](https://github.com/pradeepkumarverma1/jspopup/assets/132253060/cf4665c7-c097-45f4-af06-9b28794d44c0)
+
+________________________________________________________________
 
 2. If you want to add action when clicked on positive button
 
@@ -48,6 +52,11 @@ Once you have linked the CDN, you can simply use the jspopup.
 
 </script>
 ```
+
+### Result
+![message-with-action-popup-mockup](https://github.com/pradeepkumarverma1/jspopup/assets/132253060/08ec3c7c-0b52-423f-aeeb-0cc1248fd9e9)
+
+____________________________________________
 
 ## Customizations
 You can customize positive action and negative action buttons, in the following ways. (It's kinda simple)
@@ -79,5 +88,8 @@ You can customize positive action and negative action buttons, in the following 
 
 </script>
 ```
+
+### Result
+![popup-with-customize-action-buttons](https://github.com/pradeepkumarverma1/jspopup/assets/132253060/45b07ca0-7eff-4a10-9a4f-b9fd3b17f001)
 
 
