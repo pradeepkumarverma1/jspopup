@@ -20,9 +20,9 @@ async function popup(args, positiveFunction) {
 	const popup = document.createElement('div');
 	popup.setAttribute('id', 'jsPopup');
 	popup.style.background = '#ffffff';
-	popup.style.width = '300px';
+	popup.style.width = '500px';
 	popup.style.maxWidth = '90%';
-	popup.style.borderRadius = '10px';
+	popup.style.borderRadius = '5px';
 	popup.style.left = '50%';
 	popup.style.top = '30%';
 	popup.style.transform = 'translate(-50%)';
@@ -60,7 +60,7 @@ async function popup(args, positiveFunction) {
 	actions.style.display = 'flex';
 	actions.style.gap = '10px';
 	actions.style.margin = '10px 10px';
-	actions.style.justifyContent = 'space-between';
+	actions.style.justifyContent = 'end';
 
 
 
@@ -72,10 +72,12 @@ async function popup(args, positiveFunction) {
 		positiveButton.setAttribute('id', 'positiveButton');
 		positiveButton.style.background = 'green';
 		positiveButton.style.border = 'none';
-		positiveButton.style.borderRadius = '10px';
+		positiveButton.style.borderRadius = '5px';
+		positiveButton.style.cursor = 'pointer';
 		positiveButton.style.color = '#ffffff';
 		positiveButton.style.padding = '10px';
 		positiveButton.innerHTML =  'Continue';
+		positiveButton.style.boxShadow = '4px 8px 10px 0px #b9b9b9';
 
 
 	} else {
@@ -83,11 +85,12 @@ async function popup(args, positiveFunction) {
 		positiveButton.setAttribute('id', 'positiveButton');
 		positiveButton.style.background = args.positiveButton.background || 'green';
 		positiveButton.style.border = 'none';
-		positiveButton.style.borderRadius = '10px';
+		positiveButton.style.borderRadius = '5px';
+		positiveButton.style.cursor = 'pointer';
 		positiveButton.style.color = args.positiveButton.color ||  '#ffffff';
 		positiveButton.style.padding = '10px';
 		positiveButton.innerHTML = args.positiveButton.text ||  'Continue';
-
+		positiveButton.style.boxShadow = '4px 8px 10px 0px #b9b9b9';
 
 	}
 
@@ -128,10 +131,12 @@ async function popup(args, positiveFunction) {
 		negativeButton.setAttribute('id', 'negativeButton');
 		negativeButton.style.background = 'tomato';
 		negativeButton.style.border = 'none';
-		negativeButton.style.borderRadius = '10px';
+		negativeButton.style.borderRadius = '5px';
+		negativeButton.style.cursor = 'pointer';
 		negativeButton.style.color = '#ffffff';
 		negativeButton.style.padding = '10px';
 		negativeButton.innerHTML = 'Cancel';
+		negativeButton.style.boxShadow = '4px 8px 10px 0px #b9b9b9';
 
 	} else {
 
@@ -139,10 +144,12 @@ async function popup(args, positiveFunction) {
 		negativeButton.setAttribute('id', 'negativeButton');
 		negativeButton.style.background = args.negativeButton.background ||  'tomato';
 		negativeButton.style.border = 'none';
-		negativeButton.style.borderRadius = '10px';
+		negativeButton.style.borderRadius = '5px';
+		negativeButton.style.cursor = 'pointer';
 		negativeButton.style.color = args.negativeButton.color || '#ffffff';
 		negativeButton.style.padding = '10px';
 		negativeButton.innerHTML = args.negativeButton.text ||  'Cancel';
+		negativeButton.style.boxShadow = '4px 8px 10px 0px #b9b9b9';
 
 	}
 
