@@ -6,7 +6,7 @@ JsPopup is a simple popup written in vanilla Javascript. You can use it in any o
 The most easiest way to Use JsPopup is to use CDN link:
 
 ```
-<script src="https://cdn.jsdelivr.net/gh/pradeepkumarverma1/jspopup@1.0.1/popup.min.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/pradeepkumarverma1/jspopup@1.0.2/popup.min.js"></script>
 ```
 Always use the latest version. The lastest version is **1.0.1**
 
