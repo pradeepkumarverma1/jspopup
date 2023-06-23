@@ -8,7 +8,7 @@ The most easiest way to Use JsPopup is to use CDN link:
 ```
 <script src="https://cdn.jsdelivr.net/gh/pradeepkumarverma1/jspopup@1.0.2/popup.min.js"></script>
 ```
-Always use the latest version. The lastest version is **1.0.1**
+Always use the latest version. The lastest version is **1.0.2**
 
 ## Usage
 Once you have linked the CDN, you can simply use the jspopup.
