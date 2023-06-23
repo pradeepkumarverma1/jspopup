@@ -5,7 +5,7 @@ JsPopup is a simple popup written in vanilla Javascript. You can use it in any o
 ## Installation - CDN
 The most easiest way to Use JsPopup is to use CDN link:
 
-```
+```javascript
 <script src="https://cdn.jsdelivr.net/gh/pradeepkumarverma1/jspopup@1.0.2/popup.min.js"></script>
 ```
 Always use the latest version. The lastest version is **1.0.2**
@@ -15,7 +15,7 @@ Once you have linked the CDN, you can simply use the jspopup.
 
 1. If you want to display a simple message
 
-```
+```javascript
 <script>
 
   popup({
@@ -34,7 +34,7 @@ ________________________________________________________________
 
 2. If you want to add action when clicked on positive button
 
-```
+```javascript
 <script>
 
   popup({
@@ -61,7 +61,7 @@ ____________________________________________
 ## Customizations
 You can customize positive action and negative action buttons, in the following ways. (It's kinda simple)
 
-```
+```javascript
 <script>
 
   popup({
