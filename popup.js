@@ -51,7 +51,7 @@ async function popup(args, positiveFunction) {
 	popupMessage.setAttribute('id', 'popupMessage');
 	popupMessage.style.padding = '10px';
 
-	popupMessage.innerHTML = args.message ||  "custom message";
+	popupMessage.innerHTML = args.message || "custom message";
 
 
 
@@ -67,32 +67,15 @@ async function popup(args, positiveFunction) {
 	//The postive action button
 	const positiveButton = document.createElement('button');
 
-	if(args.positiveButton == undefined) {
-
-		positiveButton.setAttribute('id', 'positiveButton');
-		positiveButton.style.background = 'green';
-		positiveButton.style.border = 'none';
-		positiveButton.style.borderRadius = '5px';
-		positiveButton.style.cursor = 'pointer';
-		positiveButton.style.color = '#ffffff';
-		positiveButton.style.padding = '10px';
-		positiveButton.innerHTML =  'Continue';
-		positiveButton.style.boxShadow = '4px 8px 10px 0px #b9b9b9';
-
-
-	} else {
-
-		positiveButton.setAttribute('id', 'positiveButton');
-		positiveButton.style.background = args.positiveButton.background || 'green';
-		positiveButton.style.border = 'none';
-		positiveButton.style.borderRadius = '5px';
-		positiveButton.style.cursor = 'pointer';
-		positiveButton.style.color = args.positiveButton.color ||  '#ffffff';
-		positiveButton.style.padding = '10px';
-		positiveButton.innerHTML = args.positiveButton.text ||  'Continue';
-		positiveButton.style.boxShadow = '4px 8px 10px 0px #b9b9b9';
-
-	}
+	positiveButton.setAttribute('id', 'positiveButton');
+	positiveButton.style.background = args?.positiveButton?.background || 'green';
+	positiveButton.style.border = 'none';
+	positiveButton.style.borderRadius = '5px';
+	positiveButton.style.cursor = 'pointer';
+	positiveButton.style.color = args?.positiveButton?.color || '#ffffff';
+	positiveButton.style.padding = '10px';
+	positiveButton.innerHTML = args?.positiveButton?.text || 'Continue';
+	positiveButton.style.boxShadow = '4px 8px 10px 0px #b9b9b9';
 
 
 
@@ -105,9 +88,9 @@ async function popup(args, positiveFunction) {
 
 
 	//Function to be executed when positiveButton is pressed
-	if(positiveFunction == undefined) {
+	if (positiveFunction == undefined) {
 
-		positiveButton.addEventListener('click', function() {
+		positiveButton.addEventListener('click', function () {
 
 			popupContainer.remove();
 
@@ -115,7 +98,7 @@ async function popup(args, positiveFunction) {
 
 	} else {
 
-		positiveButton.addEventListener('click', function(){
+		positiveButton.addEventListener('click', function () {
 
 			positiveFunction();
 			popupContainer.remove();
@@ -123,35 +106,19 @@ async function popup(args, positiveFunction) {
 		});
 	}
 
+
 	//The negative action button
 	const negativeButton = document.createElement('button');
+	negativeButton.setAttribute('id', 'negativeButton');
+	negativeButton.style.background = args?.negativeButton?.background || 'tomato';
+	negativeButton.style.border = 'none';
+	negativeButton.style.borderRadius = '5px';
+	negativeButton.style.cursor = 'pointer';
+	negativeButton.style.color = args?.negativeButton?.color || '#ffffff';
+	negativeButton.style.padding = '10px';
+	negativeButton.innerHTML = args?.negativeButton?.text || 'Cancel';
+	negativeButton.style.boxShadow = '4px 8px 10px 0px #b9b9b9';
 
-	if(args.negativeButton == undefined) {
-
-		negativeButton.setAttribute('id', 'negativeButton');
-		negativeButton.style.background = 'tomato';
-		negativeButton.style.border = 'none';
-		negativeButton.style.borderRadius = '5px';
-		negativeButton.style.cursor = 'pointer';
-		negativeButton.style.color = '#ffffff';
-		negativeButton.style.padding = '10px';
-		negativeButton.innerHTML = 'Cancel';
-		negativeButton.style.boxShadow = '4px 8px 10px 0px #b9b9b9';
-
-	} else {
-
-
-		negativeButton.setAttribute('id', 'negativeButton');
-		negativeButton.style.background = args.negativeButton.background ||  'tomato';
-		negativeButton.style.border = 'none';
-		negativeButton.style.borderRadius = '5px';
-		negativeButton.style.cursor = 'pointer';
-		negativeButton.style.color = args.negativeButton.color || '#ffffff';
-		negativeButton.style.padding = '10px';
-		negativeButton.innerHTML = args.negativeButton.text ||  'Cancel';
-		negativeButton.style.boxShadow = '4px 8px 10px 0px #b9b9b9';
-
-	}
 
 
 
@@ -161,7 +128,7 @@ async function popup(args, positiveFunction) {
 
 
 	//Function to be executed when negativeButton is pressed
-	negativeButton.addEventListener('click', function(){
+	negativeButton.addEventListener('click', function () {
 
 		popupContainer.remove();
 

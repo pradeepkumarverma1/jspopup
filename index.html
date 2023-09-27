@@ -1,14 +1,16 @@
 <!doctype>
 <html>
-	<head>
-		<title>JS POPUP</title>
-	</head>
+
+<head>
+	<title>JS POPUP</title>
+</head>
+
 <body>
 	<h1>JS POPUP</h1>
 	<p>Custom Javascript popup for various purpose</p>
 
 	<div class="container">
-	
+
 		<button id="showPopup">Open Popup</button>
 
 	</div>
@@ -16,21 +18,18 @@
 	<script src="popup.js"></script>
 	<script>
 		let button = document.querySelector("#showPopup");
-		
+
 		function openPopup() {
 
 			popup({
 				title: "Are you sure to remove to trash?",
 				message: "Your post will be removed to trash. You can recover from there.",
-
-			}
-			
-			);
+			});
 
 		}
 
 		button.addEventListener('click', openPopup);
-		
 	</script>
 </body>
+
 </html>
