@@ -2,6 +2,9 @@
 ## Introduction
 JsPopup is a simple popup written in vanilla Javascript. You can use it in any of your application where, whether, you need to display a popup with simple message, or need to process any function. You can achieve both the goals.
 
+## Live Preview
+[https://pradeepkumarverma1.github.io/jspopup/](https://pradeepkumarverma1.github.io/jspopup/)
+
 ## Installation - CDN
 The most easiest way to Use JsPopup is to use CDN link:
 
